@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro {
+    background-image: url(../images/bgc.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+}
+.intro-wrapper {
+    width: 56%;
+    margin: auto;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 523px;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-around; 
+    gap: 40px;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-search {
+    display: flex;
+    justify-content: space-around;
+    gap: 13px;
+    align-items: center;
+}
+.intro-registration {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-link {
+font-size: 14px;
+color: #FFFFFF;
+text-decoration: none;
+}
+.img-login {
+    margin-right: 25px;
+}
+
+.intro-titel {
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.intro-btn { 
+padding: 15px 35px;
+gap: 10px;
+font-size: 18px;
+color: #FFFFFF;
+align-items: center;
+background: #333333;
+border: 1px solid #FFFFFF;
+margin: auto;
+display: block;
+margin-bottom: 80px;
+}
+
+.intro-footer {
+    border: 1px solid #FFFFFF;
+    padding: 30px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.intro-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 56%;
+    margin: auto;
+    gap: 15px;
+}
+.intro-footer-item {
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+.products {
+    width: 100%;
+    padding: 100px 0 90px 0;
+}
+
+.products-wrapper, .articles-wrapper, .social-wrapper, .contacts-wrapper, .footer-info{
+    width: 56%;
+    margin: auto;
+}
+.products-text, .article-text, .social-text{
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.products-titel, .article-title, .social-title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.products-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px; 
+}
+.product-btn {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #F9F9F9;
+    border: 1px solid #D6D6D6;
+    padding: 17px 0;
+    width: 15%;
+}
+.product-btn:hover {
+    background-color: #333333;
+    color: white;
+}
+.products-imgages, .article-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.products-images-item{
+    background-size: cover;
+    width: 31%;
+    height: 280px;
+    margin-bottom: 30px;
+}
+.item-1{
+    background-image: url(../images/1.png);
+}
+.item-2{
+    background-image: url(../images/2.png);
+}
+.item-3{
+    background-image: url(../images/3.png);
+}
+.item-4{
+    background-image: url(../images/4.png);
+}
+.item-5{
+    background-image: url(../images/5.png);
+}
+.item-6{
+    background-image: url(../images/6.png);
+}
+.products-item-titel{
+font-size: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top: 222px;
+}
+
+.salon, .mailing {
+    padding: 100px 0;
+    width: 100%;
+    background-image: url(../images/Salons.png);
+    text-align: center;
+}
+.salon-text, .mailing-text{
+font-size: 21px;
+color: #FFFFFF;
+margin-bottom: 15px;
+}
+
+.salon-titel, .mailing-title{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 45px;
+}
+.salon-descr-wrapper {
+    width: 38%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.salon-descr {
+    font-size: 18px;
+    color: white;
+}
+
+.salon-btn {
+align-items: center;
+padding: 15px 35px;
+background: #FFFFFF;
+border: 1px solid #333333;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+.articles{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.card-item {
+    width: 31%;
+    background-size: cover;
+    height: 370px;
+    margin-bottom: 60px;
+}
+.card-img1{
+    background-image: url(../images/blog1.png);
+}
+.card-img2{
+    background-image: url(../images/blog2.png);
+}
+.card-img3{
+    background-image: url(../images/blog3.png);
+}
+.card-descr {
+    font-size: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 250px;
+    margin-bottom: 35px;
+}
+
+.articles-btn {
+align-items: center;
+padding: 15px 35px;
+background: #333333;
+border: 1px solid #FFFFFF;
+text-transform: uppercase;
+font-size: 18px;
+color: #FFFFFF;
+margin: auto;
+display: block;
+}
+.social-img {
+    width: 25%;
+    height: 300px;
+}
+iframe {
+    width: 50%;
+    height: 300px;
+    aspect-ratio: 16/9;
+}
+.social-content {
+    font-size: 0;
+}
+.social{
+    padding-bottom: 150px;
+}
+form {
+    width: 23%;
+    padding: 15px;
+    border: 1px solid #FFFFFF;
+    margin-right: 31%;
+}
+input[name="email"] {
+    width: 48%;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    padding: 15px 0 15px 35px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    margin-right: 15px;
+}
+input[name="submit"] {
+    width: 38%;
+    background: #333333;
+    border: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 15px 35px;
+}
+.mail-sending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail-list{
+    font-size: 18px;
+    color: #FFFFFF;
+    list-style-image:url(../images/subscribe__icon.png);
+    margin-left: 29%;
+    text-align: left;
+}
+.mail-list-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+.contacts {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.contacts-wrapper, .footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-titel {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    padding-bottom: 10px;
+    border: 1px solid #333333;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 30px;
+}
+.item1-text:not(:last-child) {
+    margin-bottom: 15px;
+}
+.item-text {
+    margin-bottom: 20px;
+}
+
+.img-visa {
+    margin-right: 20px;
+}
+.contacts-list{
+    font-size: 14px;
+    color:black;
+    list-style-image:url(../images/entypo_old-phone.png);
+    text-align: left;
+}
+
+.list-item{
+    margin-left: 34px;
+    margin-bottom: 15px;
+}
+.contacts-item {
+    width: 23%;
+}
+.footer-info {
+    margin-top: 60px;
+    border: 1px solid #333333;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.social-icon{
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+  
+
+
+
+
+
