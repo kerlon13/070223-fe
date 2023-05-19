@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-wrapper {
+    background-image: url(../images/Rectangle.svg);
+    background-size: 100%;
+}
