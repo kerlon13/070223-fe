@@ -6,5 +6,156 @@
 
 .header-wrapper {
     background-image: url(../images/Rectangle.svg);
-    background-size: 100%;
+    background-size: cover;
+    padding-top: 195px;
 }
+h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+.header-text {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.header-block2 {
+    background-color: white;
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 57px;
+}
+.item-year {
+    font-size: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7654A;
+    margin-bottom: 25px;
+}
+.item-text1 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.item-text2 {
+    font-size: 18px;
+    text-align: center;
+    color: #999999;
+}
+.projects {
+    padding: 200px 0;
+}
+.projects-wrapper,.best-project-wrapper,.our-projects-wrapper, 
+.contacts-wrapper, .footer-wrapper {
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #404149;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.project-item {
+    width: 31%;
+}
+.project-img {
+    width: 100%;
+}
+.project-item-status{
+    width: 55px;
+    height: 6px;
+    background: #F7654A;
+    margin-top: 45px;
+    margin-bottom: 65px;
+}
+.project-item-titel {
+    font-size: 24px;
+    color: #404149;
+    margin-bottom: 20px;
+}
+.project-item-descr{
+    font-size: 16px;
+    color: #999999;
+}
+.best-project {
+    background: #F7654A;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+h3 {
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.best-project-descr {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.best-project-btn {
+    margin: auto 0;
+}
+button {
+    padding: 15px 45px;
+    background: #FFFFFF;
+}
+.our-projects {
+    padding: 150px 0 115px 0;
+}
+.our-projects-item {
+    background-image: url(../images/services__item.png);
+    background-size: 100% 100%;
+    width: 31%;
+    height: 250px;
+    margin-bottom: 35px;
+}
+footer {
+    padding: 90px 0 0 0;
+}
+.contacts-titel {
+    font-size: 24px;
+    text-align: center;
+    color: #999999;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.contacts-text {
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+.contacts-text-email {
+    font-size: 24px;
+    text-align: center;
+    color: #F7654A;
+}
+.contacts-item {
+    text-align: center;
+}
+.footer-section {
+    margin-top: 60px;
+    padding: 30px;
+    background: #404149;
+}
+.footer-text {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+
+
+
