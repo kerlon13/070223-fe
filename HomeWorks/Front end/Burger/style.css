@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 30px;
+  }
+  
+  .nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav_menu li {
+    margin-right: 20px;
+  }
+  
+  .nav_menu a {
+    text-decoration: none;
+    color:green
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color:black;
+    margin: 5px;
+  }
+
+  .nav_menu.active {
+    display: block;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .nav_menu {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
