@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-color: rgb(27, 55, 100);
+  padding: 100px 0;
+}
+
+.main-wrapper {
+  width: 92%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-right, .main-left {
+  width: 50%;
+}
+
+.main-left {
+  padding: 150px 0;
+}
+.main-left h1 {
+  color: #FFF;
+  font-size: 64px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+}
+.main-left .main-left-descr {
+  color: #B4C7E7;
+  font-size: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.welcome span {
+  color: #FFF;
+  font-size: 21px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.rectangle {
+  width: 35px;
+  height: 2px;
+  background: #FFCA42;
+  margin-right: 15px;
+}
+
+.make-order button {
+  padding: 18px 52px;
+  border: 2px solid #FFCA42;
+  background: #FFCA42;
+  color: #1B3764;
+  font-size: 19px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+.make-order a {
+  color: #FFF;
+  font-size: 19px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checks .check-btn {
+  border-radius: 50%;
+  background: #FFCA42;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.checks-elem {
+  margin-right: 50px;
+}
+.checks-elem p {
+  color: #B4C7E7;
+  font-size: 17px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.checks-elem-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checks-elem-item p {
+  color: #FFF;
+  font-size: 24px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.item-descr {
+  color: #B4C7E7;
+  font-size: 17px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+}

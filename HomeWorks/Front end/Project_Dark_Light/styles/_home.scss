@@ -1,0 +1,114 @@
+@import "global";
+$width:50%;
+body{
+    @include defaultstyle;
+}
+main {
+    background-color: $backgrcolor;
+    padding: 100px 0;
+}
+@mixin main-wrapper {
+    width: 92%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between
+}
+@mixin checkbtn{
+    border-radius: 50%;
+    background: #FFCA42;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.main-wrapper {
+    @include main-wrapper;
+}
+.main-right, .main-left {
+    width: $width;
+}
+.main-left {
+    padding: 150px 0;
+    h1 {
+        color: #FFF;
+        font-size: 64px;
+        font-family: Cardo;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .main-left-descr {
+        color: #B4C7E7;
+        font-size: 18px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+.welcome {
+    display: flex;
+    align-items: center;
+    span {
+        color: #FFF;
+        font-size: 21px;
+        font-family: Cardo;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}
+.rectangle {
+    width: 35px;
+    height: 2px;
+    background: #FFCA42;
+    margin-right: 15px;
+}
+.make-order {
+    button {
+        @include button;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+    a {
+        color: #FFF;
+        font-size: 19px;
+        font-family: Cardo;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}
+.checks {
+    display: flex;
+    align-items: center;
+    .check-btn {
+        @include checkbtn;
+    }
+    
+}
+.checks-elem {
+    margin-right: 50px;
+    p {
+        color: #B4C7E7;
+        font-size: 17px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+.checks-elem-item {
+    display: flex;
+    align-items: center;
+    p {
+        color: #FFF;
+        font-size: 24px;
+        font-family: Cardo;
+        font-style: normal;
+        font-weight: 400;
+        }
+}
+.item-descr {
+    color: #B4C7E7;
+    font-size: 17px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}

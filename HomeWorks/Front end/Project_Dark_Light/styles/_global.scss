@@ -1,0 +1,17 @@
+@mixin defaultstyle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$backgrcolor:rgba(27, 55, 100, 1);
+@mixin button {
+    padding: 18px 52px;
+    border: 2px solid #FFCA42;
+    background: #FFCA42;
+    color: #1B3764;
+    font-size: 19px;
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+}
