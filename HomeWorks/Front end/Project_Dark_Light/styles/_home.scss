@@ -23,7 +23,7 @@ main {
 .main-wrapper {
     @include main-wrapper;
 }
-.main-right, .main-left {
+.main-left {
     width: $width;
 }
 .main-left {

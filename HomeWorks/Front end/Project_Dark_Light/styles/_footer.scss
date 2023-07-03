@@ -1,1 +1,73 @@
 @import "global";
+body{
+    @include defaultstyle;
+}
+footer {
+    background-color: $backgrcolor;
+    padding: 90px 0 140px 0;
+}
+@mixin footer-wrapper {
+    width: 92%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between
+}
+@mixin footer-titles {
+    color: #FFF;
+    font-size: 24px;
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin footer-links {
+    color: #B4C7E7;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+.footer-wrapper {
+    @include footer-wrapper;
+    h3 {
+        @include footer-titles;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    a, p {
+        @include footer-links;
+        text-decoration: none;
+        margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.footer-links {
+    img {
+        margin-bottom: 20px;
+    }
+}
+.footer-adress {
+    display: flex;
+    margin-bottom: 30px;
+    .adress {
+        margin-right: 28px;
+    }
+    .mail {
+        margin-right: 59px;
+    }
+    .phone {
+        margin-right: 45px;
+    }
+    
+}

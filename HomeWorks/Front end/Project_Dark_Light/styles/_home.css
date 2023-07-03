@@ -21,7 +21,7 @@ main {
           justify-content: space-between;
 }
 
-.main-right, .main-left {
+.main-left {
   width: 50%;
 }
 

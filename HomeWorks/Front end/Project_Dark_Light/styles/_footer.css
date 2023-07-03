@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  background-color: rgb(27, 55, 100);
+  padding: 90px 0 140px 0;
+}
+
+.footer-wrapper {
+  width: 92%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-wrapper h3 {
+  color: #FFF;
+  font-size: 24px;
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.footer-wrapper a, .footer-wrapper p {
+  color: #B4C7E7;
+  font-size: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0;
+}
+.footer-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-wrapper ul li {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-wrapper ul li img {
+  margin-right: 5px;
+}
+
+.footer-links img {
+  margin-bottom: 20px;
+}
+
+.footer-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.footer-adress .adress {
+  margin-right: 28px;
+}
+.footer-adress .mail {
+  margin-right: 59px;
+}
+.footer-adress .phone {
+  margin-right: 45px;
+}
