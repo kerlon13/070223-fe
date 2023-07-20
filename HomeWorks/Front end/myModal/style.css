@@ -1,0 +1,136 @@
+
+  .forms {
+    display: flex;
+    justify-content: space-around;
+  }
+ .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+ }
+
+  form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"], button[type="submit"], .buttons button {
+    background-color: #4caf50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(226, 226, 97);
+  }
+
+
+  .modal_container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.5);
+    transition: opacity;
+    transition-duration: 0.5s;
+    z-index: 2;
+  }
+  
+  .modal {
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 250px;
+    margin: 0 auto;
+    height: 250px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgb(188, 188, 188);
+    z-index: 3;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(104, 104, 104);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .close_status {
+    display: none;
+    opacity: 0;
+  }
+
+  #popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 9999;
+}
+
+#popup.show {
+    display: block;
+}
+
+#orderForm {
+  display: none;
+  margin: 10px auto;
+}
+
+
+.skeleton-paragraph {
+  width: 100%;
+  height: 40px; 
+  background: linear-gradient(90deg, #8dd883 25%, #e0e0e0 50%, #f0f0f0 75%); 
+  background-size: 200% 100%;
+  animation: skeleton-animation 1.5s infinite; 
+  margin-bottom: 10px; 
+}
+
+@keyframes skeleton-animation {
+  0% {
+      background-position: 200% 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}
+
