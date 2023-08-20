@@ -1,0 +1,11 @@
+.btn{
+    width: 165px;
+    height: 41px;
+    flex-shrink: 0;
+    color: black;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #FCD54C;
+}
