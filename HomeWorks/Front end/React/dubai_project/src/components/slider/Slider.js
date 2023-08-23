@@ -5,44 +5,54 @@ import instagram from "../../assets/icons/instagram.svg";
 import twitter from "../../assets/icons/twitter.svg"
 import youtube from "../../assets/icons/youtube.svg"
 import group from "../../assets/slider/Group.svg"
+import slide1 from "../../assets/slider/slider1.svg"
+import slide2 from "../../assets/slider/slider2.jpg"
+import slide3 from "../../assets/slider/slider3.jpg"
+import SliderItem from "./SliderItem";
+
+import { useState } from "react";
 function Slider() {
+    const arrayImg = [facebook,twitter,youtube, li, instagram];
+    const backgrounds = [slide1,slide2,slide3];
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const currentBackground = backgrounds[currentIndex];
+    console.log(currentBackground);
+
+    const handlePrevClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? prevIndex : prevIndex - 1));
+    };
+    
+    const handleNextClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 2 ? prevIndex : prevIndex + 1));
+    };
     return (
         <div className={style.slider}>
-            <div className={style.slider_wrapper}>
+            <div className={style.slider_wrapper}
+                 style={{ backgroundImage: `url(${currentBackground})` }}   >
                 <div className={style.slider_icons}>
-                    <img src={facebook}></img>
-                    <img src={twitter}></img>
-                    <img src={youtube}></img>
-                    <img src={li}></img>
-                    <img src={instagram}></img>
+                    {arrayImg.map((icon,index) => (
+                        <img src={icon} key={index} alt="icon"></img>
+                    ))}
                 </div>
                 <div className={style.slider_luxury}>
                     <img src={group}></img>
                 </div>
                 <div className={style.slider_control}>
                     <div className={style.slider_btns}>
-                        <button>PREV</button>
+                        <button className={style.slider_btn}
+                                onClick={handlePrevClick}
+                                style={{color:currentIndex === 0 ? 'grey' : '#FFF'}}
+                                >PREV</button>
                         <span>|</span>
-                        <button>NEXT</button>
+                        <button className={style.slider_btn} 
+                                onClick={handleNextClick}
+                                style={{color:currentIndex === 2 ? 'grey' : '#FFF'}}
+                                >NEXT</button>
                     </div>
                     <div className={style.slide_descr}>
-                        <div className={style.slide_descr_item}>
-                            <div className={style.slider_number}>01</div>
-                            <p className={style.descr}>Lorem Ipsum<br/>
-                            Dolorem apset</p>
-                        </div>
-
-                        <div className={style.slide_descr_item}>
-                            <div className={style.slider_number}>02</div>
-                            <p className={style.descr}>Lorem Ipsum<br/>
-                            Dolorem apset</p>
-                        </div>
-
-                        <div className={style.slide_descr_item}>
-                            <div className={style.slider_number}>03</div>
-                            <p className={style.descr}>Lorem Ipsum<br/>
-                            Dolorem apset</p>
-                        </div>
+                        {backgrounds.map((img, index) => (
+                            <SliderItem index={index} currentIndex={currentIndex}/>
+                        ))}
                         
                     </div>
                 </div>
