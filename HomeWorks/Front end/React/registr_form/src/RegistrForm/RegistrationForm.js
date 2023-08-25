@@ -3,7 +3,8 @@ import { useForm } from 'react-hook-form';
 import style from "./RagistrationForm.module.css"
 
 const RegistrationForm = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({mode:"onChange"});
 
   const onSubmit = (data) => {
     console.log(data);
