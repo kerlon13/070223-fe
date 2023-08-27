@@ -16,8 +16,7 @@ function Slider() {
     const backgrounds = [slide1,slide2,slide3];
     const [currentIndex, setCurrentIndex] = useState(0);
     const currentBackground = backgrounds[currentIndex];
-    console.log(currentBackground);
-
+    
     const handlePrevClick = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? prevIndex : prevIndex - 1));
     };

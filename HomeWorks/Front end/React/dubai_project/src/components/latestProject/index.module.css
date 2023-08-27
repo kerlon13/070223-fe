@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.latest_project {
+    background-color: #272727;
+    padding: 125px 0 70px 0;
+    margin: auto;
+}
+.latest_project_wrapper{
+    width: 91%;
+    margin: auto;
+}
+.latest_project_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 58%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.latest_project_title  {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+.latest_project_list {
+    list-style: none;
+    padding: 0;
+}
+.latest_project_list li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.latest_project_list li:hover {
+    color: yellow;
+    text-decoration: underline;
+    cursor: pointer;
+}

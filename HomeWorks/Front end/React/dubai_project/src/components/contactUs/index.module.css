@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact_us {
+    background-color: #272727;
+    margin: auto;
+}
+.contact_us_wrapper{
+    width: 91%;
+    margin: auto;
+    background-image: url('../../assets/home/ContactUs.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0;
+}
+.contact_us_text {
+    color: #272727;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: 15px;
+}
+.contact_us_title {
+    olor: #272727;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+form > input {
+    width: 472px;
+    height: 61px;
+    background-color: white;
+    border: none;
+}
+form > button {
+    width: 165px;
+    background-color: #272727;
+    height: 61px;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+

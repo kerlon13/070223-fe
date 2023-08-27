@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.projects {
+    background-color: #272727;
+    padding: 70px 0 90px 0;
+    margin: auto;
+    padding: 115px 0;
+}
+.projects_wrapper {
+    width: 58%;
+    margin: auto;
+}
+.projects_article {
+    padding: 70px 95px;
+    margin-bottom: 65px;
+}
+.projects_article > p {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+.projects_article >p > span {
+    color: #FCD54C;
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.projects_container {
+    display: flex;
+    justify-content: space-between;
+}
+.projects_item {
+    max-width: 543px;
+}
+.projects_item_descr {
+    margin-top: 70px;
+    color: #E8E8E8;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%
+}
+
