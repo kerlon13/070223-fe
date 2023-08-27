@@ -25,8 +25,10 @@ function ContactUs () {
                             message: 'Wrong email address',
                             },
                         })}
+                        placeholder='Enter your mail'
                     />
                     <button type="submit">Send</button>
+                    {errors.email && <p>{errors.email.message}</p>}
                 </form>
             </div>
         </section>

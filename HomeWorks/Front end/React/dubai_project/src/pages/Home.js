@@ -1,5 +1,6 @@
 
 import ContactUs from "../components/contactUs";
+import Footer from "../components/footer";
 import Header from "../components/header/Header";
 import LatestProject from "../components/latestProject";
 import OurExpertise from "../components/ourExpertise";
@@ -16,6 +17,7 @@ function Home () {
             <Video />
             <Projects />
             <ContactUs />
+            <Footer />
         </>
     )
 }

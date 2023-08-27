@@ -40,6 +40,14 @@ form > input {
     height: 61px;
     background-color: white;
     border: none;
+    color: #272727;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+    padding-left: 10px;
 }
 form > button {
     width: 165px;
