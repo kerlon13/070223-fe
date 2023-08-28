@@ -9,8 +9,8 @@ function LatestProject () {
                     <h2 className={style.latest_project_title}>Latest projects</h2>
                     <div>
                         <ul className={style.latest_project_list}>
-                            {latestProjLinks.map((link) => (
-                                <li><a className={style.link}>{link}</a></li>
+                            {latestProjLinks.map((link, index) => (
+                                <li key={index}><a className={style.link}>{link}</a></li>
                             ))}
                         </ul>
                     </div>

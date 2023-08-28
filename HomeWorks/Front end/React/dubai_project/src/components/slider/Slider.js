@@ -9,10 +9,30 @@ import slide1 from "../../assets/slider/slider1.svg"
 import slide2 from "../../assets/slider/slider2.jpg"
 import slide3 from "../../assets/slider/slider3.jpg"
 import SliderItem from "./SliderItem";
-
 import { useState } from "react";
 function Slider() {
-    const arrayImg = [facebook,twitter,youtube, li, instagram];
+    const arrayImg = [
+        {
+            title:facebook,
+            link:"https://www.facebook.com"
+        },
+        {
+            title:twitter,
+            link:"https://www.twitter.com"
+        },
+        {
+            title:youtube,
+            link:"https://www.youtube.com"
+        }, 
+        {
+            title:li,
+            link:"https://www.linkedin.com/"
+        }, 
+        {
+            title:instagram,
+            link : "https://www.instagram.com/"
+        }
+    ];
     const backgrounds = [slide1,slide2,slide3];
     const [currentIndex, setCurrentIndex] = useState(0);
     const currentBackground = backgrounds[currentIndex];
@@ -30,7 +50,7 @@ function Slider() {
                  style={{ backgroundImage: `url(${currentBackground})` }}   >
                 <div className={style.slider_icons}>
                     {arrayImg.map((icon,index) => (
-                        <img src={icon} key={index} alt="icon"></img>
+                        <a key={index} href={icon.link} target="_blank"><img src={icon.title} alt="icon"></img></a>
                     ))}
                 </div>
                 <div className={style.slider_luxury}>
@@ -50,7 +70,7 @@ function Slider() {
                     </div>
                     <div className={style.slide_descr}>
                         {backgrounds.map((img, index) => (
-                            <SliderItem index={index} currentIndex={currentIndex}/>
+                            <SliderItem index={index} currentIndex={currentIndex} key={index}/>
                         ))}
                         
                     </div>

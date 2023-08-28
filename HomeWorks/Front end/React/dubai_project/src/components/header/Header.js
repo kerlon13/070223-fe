@@ -14,8 +14,8 @@ function Header() {
                     
                     <div>
                         <ul className={style.nav_list}>
-                            {navLinks.map((link) => (
-                                <li><a className={style.link}>{link}</a></li>
+                            {navLinks.map((link, index) => (
+                                <li key={index}><a className={style.link}>{link}</a></li>
                             ))}
                         </ul>
                     </div>
