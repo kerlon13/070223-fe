@@ -1,0 +1,59 @@
+
+
+.user-profile {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  .user-info p {
+    margin: 8px 0;
+  }
+  
+  .user-address, .user-company {
+    margin-top: 20px;
+  }
+  
+  .user-address h3, .user-company h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .user-address p, .user-company p {
+    margin: 8px 0;
+  }
+  
+  
+  .user-info strong,
+  .user-address strong,
+  .user-company strong {
+    font-weight: bold;
+  }
+  
+  .user-profile p {
+    font-size: 1rem;
+  }
+  
+  .user-profile a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .user-profile a:hover {
+    color: #0056b3;
+  }
+  
