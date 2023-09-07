@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.account-container {
+    text-align: center;
+    background-color: rgb(145, 184, 184);
+    height: 100vh;
+}
+.nav-menu {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu > button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 200px;
+}
+button:hover {
+    background-color: #0056b3;
+  }

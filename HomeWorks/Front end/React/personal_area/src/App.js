@@ -3,9 +3,10 @@ import './App.css';
 import LoginForm from './components/LoginForm';
 import { useState } from 'react';
 import PersonalInfo from './pages/PersonalInfo';
+import PersonalArea from './pages/PersonalArea';
 
 function App() {
-    const [activePage, setActivePage] = useState('personalInfo');
+    // const [activePage, setActivePage] = useState('personalInfo');
     const [loggedInUser, setLoggedInUser] = useState(null);
 
     const handleLogin = (user) => {
@@ -15,7 +16,7 @@ function App() {
     return (
         <div>
           {loggedInUser ? (
-            <PersonalInfo user={loggedInUser} />
+            <PersonalArea user={loggedInUser} />
             ) : (
             <LoginForm onLogin={handleLogin} user={loggedInUser}/>
           )}
