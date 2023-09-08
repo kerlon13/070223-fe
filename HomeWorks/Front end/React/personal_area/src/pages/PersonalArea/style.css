@@ -5,11 +5,9 @@
 }
 .account-container {
     text-align: center;
-    background-color: rgb(145, 184, 184);
-    height: 100vh;
 }
 .nav-menu {
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;

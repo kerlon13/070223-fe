@@ -1,0 +1,13 @@
+.result-list {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(145, 184, 184);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 8px #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+    overflow-y: auto;
+    padding: 10px 10px;
+  }

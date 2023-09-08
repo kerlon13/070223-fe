@@ -1,0 +1,18 @@
+.search-result {
+    padding: 10px 20px;
+    cursor: pointer;
+    max-width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.search-result > img {
+    max-width: 100%;
+}
+.search-result > span {
+    margin: 0 5px;
+}
+.search-result > button {
+    min-width: 10px;
+}

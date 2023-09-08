@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import './index.css'
 function PersonalInfo({user}) {
-    console.log(user);
+    
     return (
         <div className="user-profile">
           <h2>User Profile</h2>
@@ -26,6 +27,7 @@ function PersonalInfo({user}) {
           </div>
         </div>
       );
+
 }
 
 export default PersonalInfo;
