@@ -1,0 +1,33 @@
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid #0056b3;
+}
+.input-container > input {
+    max-width: 50%;
+    display: block;
+}
+.icon {
+    max-width: 20px;
+}
+.input-container > button {
+    border: none;
+    background-color: none;
+}
+.input-container > div > label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input-container > div {
+    display: flex;
+    align-items: center;
+}
