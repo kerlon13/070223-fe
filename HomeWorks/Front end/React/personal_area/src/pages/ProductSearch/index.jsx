@@ -1,18 +1,35 @@
 import { SearchBar } from '../../components/SearchBar';
 import './index.css'
-import { useState } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { SearchResultList } from '../../components/SearchResultList';
 
 function ProductSearch() {
-    const [results, setResults] = useState([]);
-    console.log(results);
+    
+    const [goods, setGoods] = useState([]);
+    const [input, setInput] = useState('');
+    
+
+    const getGoods = async () => {
+        await fetch('https://jsonplaceholder.typicode.com/photos')
+          .then(response => response.json())
+          .then(data => {
+            setGoods((prevState) => {
+                return [...prevState, ...data];
+            })
+        })      
+    }
+
+    useEffect(() => {
+        getGoods()
+    }, []);
 
     return (
-        <div className='App'>
+        <div>
         <div className='search-bar-container'>
-            <SearchBar setResults={setResults} />
-            {results && results.length > 0 && <SearchResultList results={results} />}
+            <SearchBar setGoods={setGoods} goods={goods} input={input} setInput={setInput}/>
+            
         </div>
+        {goods && goods.length > 0 && <SearchResultList goods={goods} input={input} />}
         </div>
     );
 }

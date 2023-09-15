@@ -1,0 +1,16 @@
+.cart-products {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(145, 184, 184);
+    padding: 10px 10px;
+    width: 80%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    box-shadow: 0 0 8px #ddd;
+    border-radius: 10px;
+}
+.text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}

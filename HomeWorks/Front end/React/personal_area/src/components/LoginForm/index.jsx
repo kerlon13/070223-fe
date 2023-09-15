@@ -3,9 +3,9 @@ import './index.css'
 import Modal from '../Modal';
 
 function LoginForm({onLogin}) {
+
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
-    // const [user, setUser] = useState('');
     const [isModal, setModal] = useState(false);
 
     const handleSubmit = (event) => {
@@ -16,6 +16,7 @@ function LoginForm({onLogin}) {
         .then((response) => response.json())
         .then((data) => data.length ? onLogin(data[0]) : setModal(true));   
     }
+    
     return (
         <div>
         <form onSubmit={handleSubmit}>

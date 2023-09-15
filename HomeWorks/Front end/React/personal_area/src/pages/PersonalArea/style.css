@@ -25,3 +25,7 @@
 button:hover {
     background-color: #0056b3;
   }
+.count {
+    color: yellow;
+    font-weight: bold;
+}

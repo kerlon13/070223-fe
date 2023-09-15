@@ -5,14 +5,27 @@
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search-result > img {
     max-width: 100%;
 }
-.search-result > span {
-    margin: 0 5px;
-}
 .search-result > button {
     min-width: 10px;
+}
+.cartImg {
+    max-width: 30px;
+    max-height: 20px;
+    margin-left: 40px;
+}
+.search-btns-wrapper {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+}
+.search-btns-wrapper > button {
+    margin-right: 10px;
 }

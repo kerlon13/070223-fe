@@ -1,16 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./style.css";
 import Cart from "../Cart";
 import PersonalInfo from "../PersonalInfo";
 import ProductSearch from "../ProductSearch";
+import { Context } from "../../context";
 
 function PersonalArea({user}) {
     const [activePage, setActivePage] = useState('PersonalInfo');
+    const { count } = useContext(Context);
 
     const pages = [
         { id: 'PersonalInfo', label: 'Personal Info', component: <PersonalInfo user={user}/> },
         { id: 'ProductSearch', label: 'Product Search', component: <ProductSearch /> },
-        { id: 'Cart', label: 'Cart', component: <Cart /> },
+        { id: 'Cart', label:'Cart',count:count, component: <Cart/> },
       ];
     
     const handleButtonClick = (pageId) => {
@@ -21,9 +23,9 @@ function PersonalArea({user}) {
         <div className="account-container">
             <h1>Welcome, personal account, {user.name}</h1>
             <div className="nav-menu">
-                {pages.map(({id, label}) => (
+                {pages.map(({id, label, count}) => (
                     <button key={id} onClick={() => handleButtonClick(id)}>
-                    {label}
+                    {label} <span className="count">{count}</span>
                     </button>
                 ))}
             </div>

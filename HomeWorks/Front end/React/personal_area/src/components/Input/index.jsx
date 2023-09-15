@@ -17,11 +17,10 @@ function Input({value, title}) {
     };
 
     const handleSaveClick = () => {
-        console.log('Сохранено значение:', inputValue);
         setNewValue(inputValue);
         setIsEditing(false);
     };
-    console.log(title);
+   
     return(
         
         <div >
