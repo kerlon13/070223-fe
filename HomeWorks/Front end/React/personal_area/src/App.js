@@ -1,7 +1,7 @@
 
 import './App.css';
 import LoginForm from './components/LoginForm';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PersonalArea from './pages/PersonalArea';
 import { Context } from './context';
 
@@ -12,18 +12,20 @@ function App() {
 
     const addToCart = (product) => {
       setCartItems([...cartItems, product]);
-      setCount(count + 1);
     };
 
     const removeFromCart = (product) => {
       const updatedCart = cartItems.filter((item) => item.id !== product.id);
       setCartItems(updatedCart);
-      setCount(count -1);
     };
     
     const handleLogin = (user) => {
       setLoggedInUser(user);
     };
+
+    useEffect(() => {
+      setCount(cartItems.length);
+    }, [cartItems])
 
     return (
       <Context.Provider
